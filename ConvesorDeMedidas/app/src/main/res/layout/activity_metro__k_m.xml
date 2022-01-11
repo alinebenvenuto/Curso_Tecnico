@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Metro_KM">
+
+    <Button
+        android:id="@+id/btnConverter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-200dp"
+        android:fontFamily="sans-serif-black"
+        android:lineSpacingExtra="0sp"
+        android:text="CONVERTER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#004F73"
+        app:layout_constraintBottom_toTopOf="@+id/edtKM2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMT" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#004F73"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Digite o número:"
+        android:textAlignment="viewStart"
+        android:textColor="#004F73"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtMT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtKM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-220dp"
+        android:layout_marginBottom="-220dp"
+        android:backgroundTint="#000000"
+        android:ems="8"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConverter2" />
+
+    <EditText
+        android:id="@+id/edtMT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#004F73"
+        android:ems="8"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnConverter2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/btnNovo2"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-black"
+        android:text="NOVO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtKM2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
